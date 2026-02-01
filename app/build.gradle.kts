@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui.compose)
     implementation(libs.androidx.media3.common)
+    implementation(libs.androidx.media3.datasource.okhttp)
+    implementation(libs.okhttp)
 
     // Paging Support
     implementation(libs.androidx.paging.compose)
