@@ -16,7 +16,7 @@ import okhttp3.OkHttpClient
 @UnstableApi
 class PlayerPool(
     private val context: Context,
-    poolSize: Int = 3,
+    poolSize: Int = 4,
     private val cacheSize: Long = 100L,
 ) {
 

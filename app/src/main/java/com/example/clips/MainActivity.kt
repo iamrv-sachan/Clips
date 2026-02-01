@@ -64,6 +64,7 @@ private fun VideoPlayerItem(
         state = state,
         modifier = modifier
             .fillMaxSize(),
+        beyondViewportPageCount = 1,
     ) { clip ->
         val player = playerPool.getPlayerForClips(clip)
         val lifecycleOwner = rememberLifecycleOwner()
@@ -76,7 +77,6 @@ private fun VideoPlayerItem(
                         MediaItem.fromUri(url)
                     )
                     player.prepare()
-                    player.setPlaybackSpeed(3.0f)
                     player.playWhenReady = true
                 } else {
                     player.playWhenReady = false
